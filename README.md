@@ -7,3 +7,9 @@
 2. [选择排序](./src/com/joker/primary/SelectionSort.java)
 3. [冒泡排序](./src/com/joker/primary/BubbleSortDemo.java)
 4. [插入排序](./src/com/joker/primary/InsertionSort.java)
+
+
+## 基础算法体系
+* [贪心](./src/com/joker/basic/greedy)
+  * [字符串拼接字典序最小](./src/com/joker/basic/greedy/LowestLexicography.java)
+  * 
