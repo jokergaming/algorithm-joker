@@ -21,3 +21,4 @@
 
 * [递归过程](./src/com/joker/basic/recursion)
   * [递归实现汉诺塔(1)](./src/com/joker/basic/recursion/Hanoi.java)——朴素方法，六个函数
+  * [递归实现汉诺塔(2)](./src/com/joker/basic/recursion/Hanoi2.java)——递归函数可以通过增加参数来进一步抽象
