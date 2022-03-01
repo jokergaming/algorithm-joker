@@ -27,3 +27,7 @@
   * [字符串所有排列](./src/com/joker/basic/recursion/Permutation.java)
   * [递归逆序栈](./src/com/joker/basic/recursion/ReverseStack.java)
   * [递归逆序数字](./src/com/joker/basic/recursion/ReverseNum.java)
+  
+* [动态规划](./src/com/joker/basic/dp)
+  * [机器人走路的方法](./src/com/joker/basic/dp/RobotWalk.java)
+  * [两人打牌博弈]
