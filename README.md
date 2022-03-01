@@ -25,3 +25,4 @@
   * [字符串所有子序列，不去重](./src/com/joker/basic/recursion/AllSubStr.java)
   * [字符串所有子序列，去重](./src/com/joker/basic/recursion/AllSubStrDeduplication.java)——利用set去重
   * [字符串所有排列](./src/com/joker/basic/recursion/Permutation.java)
+  * [递归反转栈](./src/com/joker/basic/recursion/ReverseStack.java)
