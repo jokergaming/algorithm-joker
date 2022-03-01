@@ -1,4 +1,4 @@
-package com.joker.basic.DisjointSets;
+package com.joker.basic.unionfind;
 
 import java.util.*;
 
