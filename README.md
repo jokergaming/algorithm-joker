@@ -30,4 +30,4 @@
   
 * [动态规划](./src/com/joker/basic/dp)
   * [机器人走路的方法](./src/com/joker/basic/dp/RobotWalk.java)
-  * [两人打牌博弈]
+  * [两人打牌博弈](./src/com/joker/basic/dp/CardsInLine.java)
