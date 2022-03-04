@@ -4,9 +4,10 @@
 
 ## 简单算法
 1. [整数转二进制](./src/com/joker/primary/PrintIntegerBinary.java)
-2. [选择排序](./src/com/joker/primary/SelectionSort.java)
-3. [冒泡排序](./src/com/joker/primary/BubbleSortDemo.java)
-4. [插入排序](./src/com/joker/primary/InsertionSort.java)
+2. [阶乘累加和](./src/com/joker/primary/SumOfFactorial.java)
+3. [选择排序](./src/com/joker/primary/SelectionSort.java)
+4. [冒泡排序](./src/com/joker/primary/BubbleSortDemo.java)
+5. [插入排序](./src/com/joker/primary/InsertionSort.java)
 
 
 ## 基础算法体系
