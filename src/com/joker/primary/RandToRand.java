@@ -129,4 +129,22 @@ public class RandToRand {
     private static int g() {
         return (ff() << 2) + (ff() << 1) + ff();
     }
+
+    /*
+    * 已知x返回0概率p,返回1概率1-p
+    * 构造y等概率返回0和1 */
+    private static int x() {
+        // x返回0概率是0.84
+        return Math.random() < 0.84 ? 0 : 1;
+    }
+
+    /* 调用x两次, 两次不等的概率都是p * (1 - p)
+    所以相等 */
+    private static int y() {
+        int ans = 0;
+        do {
+            ans = x();
+        } while (ans == x());
+        return ans;
+    }
 }
