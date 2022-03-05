@@ -1,5 +1,7 @@
 package com.joker.primary;
 
+import java.util.Arrays;
+
 public class RandToRand {
     public static void main(String[] args) {
         int testTime = 10000000;
@@ -53,6 +55,31 @@ public class RandToRand {
         // 结果是0.125 = 0.5^3
         System.out.println((double) count / (double) testTime);
 
+
+        // 证明f返回[1,5]上随机一个数
+        System.out.println("-------------------------");
+        Arrays.fill(counts, 0);
+        for (int i = 0; i < testTime; i++)
+            counts[f()]++;
+        for (int i = 1; i <= 5; i++)
+            System.out.println(counts[i]);
+
+        System.out.println("--------------------------");
+        count = 0;
+        for (int i = 0; i < testTime; i++) {
+            if (ff() == 0)
+                count++;
+        }
+        System.out.println((double) count / (double) testTime);
+
+        System.out.println("--------------------------");
+        Arrays.fill(counts, 0);
+        for (int i = 0; i < testTime; i++) {
+            counts[g()]++;
+        }
+        for (int i = 0; i < 7; i++) {
+            System.out.println(counts[i]);
+        }
     }
 
     // math.random() 返回[0, 1)上的数，math.random() < 0.3的概率为0.3, < 1的概率为1
@@ -71,5 +98,35 @@ public class RandToRand {
             ans = Math.max(ans, Math.random());
         }
         return ans;
+    }
+
+    /*
+    * 从1~5随机 改造成0~1随机
+    * 思路：
+    * 1 2 3 4 5等概率
+    * 那么如果得到1 2 就返回0
+    * 得到4 5就返回1
+    * 是3就重新开始，就可以实现 */
+    private static int f() {
+        return (int) (Math.random()*5 + 1);
+    }
+
+    /*
+    * 已知f返回[1,5]随机一个数
+    * 利用f改造ff随机返回[0,1]一个数 */
+    private static int ff() {
+        int ans = 0;
+        do {
+            ans = f();
+        } while (ans == 3);
+
+        return ans < 3 ? 0 : 1;
+    }
+
+    /*
+    * ff随机返回[0, 1]随机一个数,
+    * g会随机返回[0, 7]随机一个数 */
+    private static int g() {
+        return (ff() << 2) + (ff() << 1) + ff();
     }
 }
